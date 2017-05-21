@@ -12,4 +12,5 @@ node {
    stage('Deploy') {
       ansiblePlaybook credentialsId: 'ssh-credentials', installation: 'ansible-installation', playbook: 'deploy.yaml', sudoUser: null
    }
+   
 }
